@@ -2,8 +2,9 @@ package com.example.demo.service;
 
 @Component
 public class WeatherService{
-  
-  private static final String apiKey="";
+
+  @Value("${weather.api.key}")
+  private String apiKey;
   
   private static final String API="";
 
